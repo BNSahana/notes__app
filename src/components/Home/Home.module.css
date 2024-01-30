@@ -1,0 +1,223 @@
+:root {
+  --primary-color: #000;
+  --background: #dae5f5;
+  --background-color: #2f2f2f2b;
+  --button-bg: #000;
+  --button-text-color: #fff;
+}
+/*Desktop styling */
+.desktop__sidebar__container {
+  width: 30%;
+  height: 100vh;
+  margin-left: 20px;
+  margin-right: 0px;
+  padding: 0;
+}
+.desktop__heading {
+  color: var(--primary-color);
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0.63px;
+  text-align: center;
+  position: sticky;
+  top: 0px;
+}
+.desktop__create__group__msg {
+  text-align: center;
+  font-size: 18px;
+}
+.desktop__create__group__button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #16008b;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  position: fixed;
+  top: 90vh;
+  margin-left: 17vw;
+}
+.desktop__groupItem {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.desktop__groupIcon {
+  margin-left: 10px;
+  width: 45px;
+  height: 45px;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 22px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.desktop__groupName {
+  font-weight: bold;
+  letter-spacing: 0.48px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+/* Mobile styling*/
+.mobile__sidebar__container {
+  width: 100%;
+  height: fit-content;
+}
+.mobile__heading {
+  color: var(--primary-color);
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 0.63px;
+  text-align: center;
+  position: sticky;
+  top: 0px;
+}
+
+.mobile__create__group__msg {
+  text-align: center;
+  font-size: 20px;
+}
+
+.mobile_create__group__button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #16008b;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  position: fixed;
+  top: 90vh;
+  margin-left: 80vw;
+}
+.mobile__groupIcon {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 18px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile__groupItem {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-weight: 550;
+}
+.mobile_groupList,
+.desktop__groupList {
+  overflow-y: auto;
+  max-height: 90vh;
+}
+.mobile__groupName {
+  font-size: 20px;
+  font-weight: 550;
+  letter-spacing: 0.48px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.mobile__groupItem.selected,
+.desktop__groupItem.selected,
+.mobile__groupItem:hover,
+.desktop__groupItem:hover {
+  border-radius: 22px 0px 0px 22px;
+  background-color: var(--background-color);
+}
+
+.message__container {
+  background: var(--background);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.message__area__text {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.message__area__heading {
+  color: var(--primary-color);
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.message__area__description {
+  color: #292929;
+  margin-top: 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.44px;
+}
+
+.message__area__footer {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  right: 32%;
+  gap: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #ffffff;
+  height: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .sidebarContainer {
+    width: 100%;
+    height: fit-content;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .CreateButton {
+    width: inherit;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .headingMobile {
+    margin-left: 20px;
+    text-align: center;
+  }
+}

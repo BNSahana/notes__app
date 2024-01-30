@@ -1,0 +1,163 @@
+:root {
+  --primary-color: #000;
+  --modal-background: rgba(47, 47, 47, 0.75);
+}
+
+/* Desktop styling */
+.desktop__modal__background {
+  width: 100vw;
+  height: 100vh;
+  background: var(--modal-background);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktop__modal__container {
+  width: 590px;
+  min-height: 220px;
+  max-width: 500px;
+  min-width: 200px;
+  border-radius: 6px;
+  background: #fff;
+  padding: 35px;
+}
+
+.desktop__modal__heading,
+.desktop__modal__group,
+.desktop__modal__color {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 160%;
+  letter-spacing: 0.956px;
+}
+
+.desktop__modal__heading {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.015px;
+}
+
+.desktop__modal__group,
+.desktop__modal__color {
+  padding-left: 20px;
+  padding-right: 30px;
+}
+.desktop__modal__inputtext {
+  width: 290px;
+  height: 35px;
+  border-radius: 22px;
+  border: 2px solid #ccc;
+  color: #000;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.desktop__modal__inputtext::placeholder {
+  color: #979797;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.805px;
+}
+.desktop__create__modal {
+  width: 120px;
+  height: 35px;
+  background: var(--primary-color);
+  border-radius: 11px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.7px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 400px;
+  margin-top: 30px;
+}
+.error {
+  color: red;
+  text-align: end;
+}
+/* Mobile styling */
+.mobile__modal__background {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(47, 47, 47, 0.75);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: fixed; */
+}
+
+.mobile__modal__container {
+  width: 260px;
+  min-height: 200px;
+  max-width: 260px;
+  min-width: 50px;
+  border-radius: 6px;
+  background: #fff;
+  padding: 10px;
+}
+.mobile__modal__heading {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1.015px;
+}
+.mobile__modal__group,
+.mobile__modal__color {
+  padding-left: 0px;
+  padding-right: 7px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.mobile__modal__inputtext {
+  width: 160px;
+  height: 25px;
+  border-radius: 22px;
+  border: 2px solid #ccc;
+  color: #000;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  font-size: 10px;
+}
+
+.mobile__modal__inputtext::placeholder {
+  color: #979797;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.805px;
+}
+.mobile__create__modal {
+  width: 80px;
+  height: 25px;
+  background: var(--primary-color);
+  border-radius: 11px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.7px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 170px;
+  margin-top: 35px;
+}
+.mobile__modal__error {
+  color: red;
+  text-align: end;
+  font-size: 12px;
+}
+.colorButton:hover {
+  transform: translate3d(0px, -2px, 0px);
+  cursor: pointer;
+}
